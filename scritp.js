@@ -1,9 +1,13 @@
-const p = document.querySelector("p");
+const p = document.getElementById ("oi");
 let numero = 0;
 
-function mais() {
-  p.innerText = ++numero;
+function aumentar() {
+    p.innerText = ++numero
 }
-function menos() {
-  p.innerText = --numero;
+function diminuir() {
+    if(numero > 0)
+    p.innerText = --numero
+}
+function zerar() {
+    p.innerText = numero = 0
 }
